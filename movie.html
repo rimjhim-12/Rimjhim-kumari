@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+	<style>
+	body {
+    font-family: calibri, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4CAF50;
+}
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header input, header select, header button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+#movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.movie-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(25% - 2rem);
+}
+
+.movie-item img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-details {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+@media (max-width: 768px) {
+    .movie-item {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-item {
+        width: calc(100% - 2rem);
+    }
+}
+
+    <link rel="stylesheet" href="styles.css">
+	</style>
+</head>
+<body>
+    <header>
+        <h1>Movie Title</h1>
+    </header>
+    <main>
+        <div class="movie-details">
+            <h2>Movie Title</h2>
+            <img src="C:\Users\hp\Pictures\Camera Roll\film.jpg" alt="Movie Poster">
+            <p>Synopsis:Hammer things home with a strong ending ...</p>
+            <p>Genre: Action</p>
+            <p>Director: Rimjhim kumari</p>
+            <p>Director: alica</p>
+            <p>Cast: Actor 1, Actor 2, Actor 3</p>
+            <p>Rating: 9.0/10</p>
+        </div>
+    </main>
+</body>
+</html>
